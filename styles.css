@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+body::before {
+    content: "";
+    background-image: url('assets/Cardinal\ Backdrop.png'); /* Adjust the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 1; /* Adjust the opacity if needed */
+}
+
+header img {
+    width: 50px; 
+    height: 50px; 
+    grid-column: 3; 
+    justify-self: right;
+}
+main h2 {
+    text-align: center; 
+}
+@font-face { 
+    font-family: 'MyFont'; 
+    src: 
+        url('assets\kage.otf')  
+        format('opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
+} 
+  
+header {
+    background-color: #DC143C;
+    color: #fff;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 0.25em;
+}
+
+header h1 {
+    justify-self: start;
+    font-size: 1.5em;
+    padding-left: 10px; 
+    grid-column: 1; 
+    fill: red;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #3f3f3f;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.grid-container {
+    display: grid;
+    min-height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    
+}
+
+.box{
+    margin: 5px;
+}
+.box1, .box2{
+    background-color: #fff;
+    height: 230px;
+    width: 600px;
+    border-radius: 5px 5px 5px 5px;
+    max-height: 35vh;
+    box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
+    border: 1px solid black;
+    
+    
+
+}
+
+/* Dropdown Button */
+.dropbtn {
+    grid-column: 3;  /* Move the button to the third column */
+    justify-self: end; 
+    background-color: #DC143C;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    padding: .25px .25px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    grid-column: 3; 
+    justify-self: end;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+    right:0; /* Adjust the value as needed */
+}
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    right: 0;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #aa112f;}
+
